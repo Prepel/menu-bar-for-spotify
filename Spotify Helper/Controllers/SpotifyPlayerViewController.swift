@@ -30,6 +30,9 @@ class SpotifyPlayerViewController: NSViewController {
     override func viewWillAppear() {
         updateState()
     }
+    @IBAction func quitClicked(_ sender: NSButton) {
+        NSApplication.shared.terminate(self)
+    }
     
     @IBAction func didSelectPrevious(_ sender: Any) {
         Spotify.previousTrack()
@@ -39,6 +42,7 @@ class SpotifyPlayerViewController: NSViewController {
         Spotify.nextTrack()
     }
 
+    
     func addMouseOverListener() {
         let area = NSTrackingArea.init(rect: albumArt.bounds, options: [NSTrackingArea.Options.mouseEnteredAndExited, NSTrackingArea.Options.activeAlways], owner: self, userInfo: nil)
         albumArt.addTrackingArea(area)

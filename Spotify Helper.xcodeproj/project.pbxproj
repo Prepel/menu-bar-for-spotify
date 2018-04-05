@@ -366,7 +366,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = ERGBBR34XM;
+				DEVELOPMENT_TEAM = K3PT32AM82;
 				INFOPLIST_FILE = "$(SRCROOT)/Spotify Helper/Config/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lucid.Spotify-Helper";
@@ -383,7 +383,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = ERGBBR34XM;
+				DEVELOPMENT_TEAM = K3PT32AM82;
 				INFOPLIST_FILE = "$(SRCROOT)/Spotify Helper/Config/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lucid.Spotify-Helper";
