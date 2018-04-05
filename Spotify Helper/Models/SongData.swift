@@ -44,13 +44,18 @@ struct SongData {
         guard let track = self.getTrack() else { return "Nothing playing" }
         let header = "\(artist) - \(track)"
         
-        if header.characters.count > 30 {
-            let difference = 30 - header.characters.count
-            let endIndex = header.index(header.endIndex, offsetBy: difference)
-            let truncated = header.substring(to: endIndex)
-            return "\(truncated)..."
+        if Spotify.playerState() == .Playing {
+        
+            if header.characters.count > 30 {
+                let difference = 30 - header.characters.count
+                let endIndex = header.index(header.endIndex, offsetBy: difference)
+                let truncated = header.substring(to: endIndex)
+                return "\(truncated)..."
+            } else {
+                return header
+            }
         } else {
-            return header
+            return "-"
         }
     }
     
